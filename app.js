@@ -1,7 +1,7 @@
 const express = require('express');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const genAI = new GoogleGenerativeAI("AIzaSyANncwfgLkcl10N9w6Zi9TOZdxR9mY1cVk");
+const genAI = new GoogleGenerativeAI("env");
 const app = express();
 
 app.get('/generate-story', async (req, res) => {
