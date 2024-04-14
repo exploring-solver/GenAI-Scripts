@@ -8,8 +8,6 @@ load_dotenv()
 
 # Streamlit app title
 st.title("3D Model Visualizer")
-
-# Get user input for the API key
 api_key = os.getenv('MESHY_KEY')
 
 # Get user input for the conversion parameters
