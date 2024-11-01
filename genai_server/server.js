@@ -16,6 +16,9 @@ connectDB();
 // Database connection (You can implement this later)
 
 // Routes
+app.get('/',(req,res)=>{
+  res.json("chill maaro yaar genai ke saath!")
+});
 app.use('/api/genai', genaiRoutes);
 // Port setup
 const PORT = process.env.PORT || 3000;

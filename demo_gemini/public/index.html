@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gemini AI Demo</h1>
+        
+        <div class="section">
+            <h2>Text Generation</h2>
+            <textarea id="textPrompt" placeholder="Enter your prompt..."></textarea>
+            <button onclick="generateText()">Generate</button>
+            <div id="textResult" class="result"></div>
+        </div>
+
+        <div class="section">
+            <h2>Image Analysis</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <textarea id="imagePrompt" placeholder="Enter prompt for image analysis..."></textarea>
+            <button onclick="analyzeImage()">Analyze</button>
+            <div id="imageResult" class="result"></div>
+        </div>
+
+        <div class="section">
+            <h2>Embeddings</h2>
+            <textarea id="embeddingText" placeholder="Enter text for embedding..."></textarea>
+            <button onclick="generateEmbedding()">Generate Embedding</button>
+            <div id="embeddingResult" class="result"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
